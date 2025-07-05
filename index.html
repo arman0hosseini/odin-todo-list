@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+  <script defer src="main.js"></script></head>
+  <body>
+    <header>
+      <div class="current-project-name-container">
+        <!-- <button class="current-project-name">Default Project</button> -->
+      </div>
+      <button class="add-project">Add a Project</button>
+    </header>
+    <aside>
+      <div class="side-header">
+        <div class="logo-container">
+          <div class="svg-contaienr">
+            <svg
+              fill="#f3f3df"
+              width="50px"
+              height="50px"
+              viewBox="0 0 22 22"
+              xmlns="http://www.w3.org/2000/svg"
+              id="memory-alpha-t"
+              stroke="#f3f3df"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M15 1V2H17V3H18V4H19V5H20V7H21V15H20V17H19V18H18V19H17V20H15V21H7V20H5V19H4V18H3V17H2V15H1V7H2V5H3V4H4V3H5V2H7V1H15M14 3H8V4H6V5H5V6H4V8H3V14H4V16H5V17H6V18H8V19H14V18H16V17H17V16H18V14H19V8H18V6H17V5H16V4H14V3M8 6H14V8H12V16H10V8H8V6Z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+          <h1 class="logo">ooDoo</h1>
+        </div>
+      </div>
+      <div class="side-main">
+        <div class="projects-container">
+          <div class="main-title-container">
+            <div class="svg-container">
+              <svg
+                fill="#f3f3e0"
+                width="30px"
+                height="30px"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+                id="memory-bag-personal"
+                stroke="#f3f3e0"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M17 15H9V17H7V15H5V19H17V15M17 9H16V8H15V7H7V8H6V9H5V13H17V9M13 11H9V10H10V9H12V10H13V11M3 8H4V6H6V5H7V2H8V1H14V2H15V5H16V6H18V8H19V20H18V21H4V20H3V8M9 3V5H13V3H9Z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+            <h2>My Projects</h2>
+            <div class="svg-container">
+              <svg
+                fill="#f3f3e0"
+                width="30px"
+                height="30px"
+                viewBox="0 0 22 22"
+                xmlns="http://www.w3.org/2000/svg"
+                id="memory-bag-personal"
+                stroke="#f3f3e0"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    d="M17 15H9V17H7V15H5V19H17V15M17 9H16V8H15V7H7V8H6V9H5V13H17V9M13 11H9V10H10V9H12V10H13V11M3 8H4V6H6V5H7V2H8V1H14V2H15V5H16V6H18V8H19V20H18V21H4V20H3V8M9 3V5H13V3H9Z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <!-- <div class="project-container">
+            <h3>Default Project</h3>
+            <ul class="todo-list-demo">
+              <li class="todo-title-demo">Task1</li>
+              <li class="todo-title-demo">Task2</li>
+              <li class="todo-title-demo">Task3</li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    </aside>
+    <main>
+      <div class="todo-list">
+        <!-- <div class="todo-item">
+          <button class="task-done">✓</button>
+          <p class="task-title">kir kos mame</p>
+          <p class="task-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis,
+            deleniti.
+          </p>
+          <time class="task-date" datetime="2025-06-06">June 6, 2025</time>
+          <div class="priority low"></div>
+        </div>
+        <div class="todo-item">
+          <button class="task-done">✓</button>
+          <p class="task-title">koon kir koooooooon</p>
+          <p class="task-desc">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic culpa
+            doloremque vero optio in dignissimos rerum, at tempore aspernatur
+            molestiae eveniet magni rem incidunt eum dolorem ullam dolore ab
+            ducimus?
+          </p>
+          <time class="task-date" datetime="2025-06-06">June 6, 2025</time>
+          <div class="priority low"></div>
+        </div>
+        <div class="todo-item">
+          <button class="task-done">✓</button>
+          <p class="task-title">Lorem, ipsum.</p>
+          <p class="task-desc">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+            aliquam ad, ratione laudantium quo expedita repellendus incidunt
+            magni veniam reprehenderit!
+          </p>
+          <time class="task-date" datetime="2025-06-06">June 6, 2025</time>
+          <div class="priority low"></div>
+        </div> -->
+      </div>
+      <div class="add-task-btn-container">
+        <button class="add-task-btn">Add Task</button>
+      </div>
+    </main>
+
+    <dialog id="project-name-dialog">
+      <div class="project-dialog-header">
+        <h2 class="current-project-dialog">Default Project</h2>
+        <button class="close-dialog">X</button>
+      </div>
+      <div class="new-project-name-dialog">
+        <label for="new-project-name">New Project Name:</label>
+        <input type="text" id="new-project-name" />
+      </div>
+      <div class="change-name-button-dialog">
+        <button class="delete-project-button">Delete</button>
+        <button class="change-name-button">Change</button>
+      </div>
+    </dialog>
+
+    <dialog id="new-project-dialog">
+      <div class="new-project-dialog-header">
+        <h2>Add a project</h2>
+        <button class="close-dialog">X</button>
+      </div>
+      <div class="new-project-dialog">
+        <label for="new-project">Project Name</label>
+        <input type="text" id="new-project" />
+      </div>
+      <div class="add-project-button-container">
+        <button class="add-project-button">Add Project</button>
+      </div>
+    </dialog>
+
+    <dialog id="new-task-dialog">
+      <div class="task-things-container">
+        <div class="task-dialog-header">
+          <h2 class="current-task-dialog">Add a task</h2>
+          <button class="close-dialog">X</button>
+        </div>
+        <div class="new-task-information">
+          <label for="new-task-name">Task Name:</label>
+          <input type="text" id="new-task-name" />
+        </div>
+        <div class="new-task-information-desc">
+          <label for="new-task-desc">Task Description: </label>
+          <textarea id="new-task-desc"></textarea>
+        </div>
+        <div class="new-task-information">
+          <label for="new-task-date">Task Date:</label>
+          <input type="date" id="new-task-date" />
+        </div>
+        <div class="new-task-information">
+          <label for="new-task-priority">Task Priority</label>
+          <select id="new-task-priority">
+            <option value="high">High</option>
+            <option value="normal">Normal</option>
+            <option value="low">Low</option>
+          </select>
+        </div>
+        <div class="add-task-button-dialog-container">
+          <button class="add-task-button-dialog">Add Task</button>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
